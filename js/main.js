@@ -3,7 +3,7 @@ const musicKit = require("@jasonfleischer/music-model-kit");
 musicKit.init();
 
 const fretboardView = fretboardKit({
-	id: 'your_fretboard_id',
+	id: 'fretboard',
 	width: 325,
 	onClick: function(note, isOn) {
 		if(isOn) {
