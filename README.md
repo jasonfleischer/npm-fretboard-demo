@@ -1,6 +1,6 @@
-# [@jasonfleischer/piano](https://www.npmjs.com/package/@jasonfleischer/piano) package demo
+# [@jasonfleischer/fretboard](https://www.npmjs.com/package/@jasonfleischer/fretboard) package demo
 
-Click [HERE](https://jasonfleischer.github.io/npm-piano-demo/) to see the demo for the [@jasonfleischer/piano](https://www.npmjs.com/package/@jasonfleischer/piano) package
+Click [HERE](https://jasonfleischer.github.io/npm-fretboard-demo/) to see the demo for the [@jasonfleischer/fretboard](https://www.npmjs.com/package/@jasonfleischer/fretboard) package
 
-![Screenshot](https://jasonfleischer.github.io/npm-piano-demo/screenshot/screen.png "Screenshot")
+![Screenshot](https://jasonfleischer.github.io/npm-fretboard-demo/screenshot/screen.png "Screenshot")
 
