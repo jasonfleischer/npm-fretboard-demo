@@ -18,14 +18,16 @@ const fretboardView = fretboardKit({
 document.getElementById("note_button").onclick = function() { 
 	let midiValue = 44; // A2
 	let note = musicKit.all_notes[midiValue];
+	let showLabels = true;
 	fretboardView.clear();
-	fretboardView.drawNote(note);
+	fretboardView.drawNote(note, showLabels);
 };
 document.getElementById("chord_button").onclick = function() {
 	let midiValue = 60 // C4
 	let note = musicKit.all_notes[midiValue];
 	let chord = new musicKit.Chord(note, musicKit.Chord.TYPE.minor);
-	fretboardView.drawChord(chord);
+	let showLabels = true;
+	fretboardView.drawChord(chord, showLabels);
 }
 document.getElementById("scale_button").onclick = function() {
 	let midiValue = 62 // D
