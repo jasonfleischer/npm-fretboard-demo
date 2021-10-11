@@ -23,22 +23,22 @@ document.getElementById("note_button").onclick = function() {
 	fretboardView.drawNote(note, showLabels);
 };
 document.getElementById("chord_button").onclick = function() {
-	let midiValue = 60 // C4
+	let midiValue = 60; // C4
 	let note = musicKit.all_notes[midiValue];
 	let chord = new musicKit.Chord(note, musicKit.Chord.TYPE.minor);
 	let showLabels = true;
 	fretboardView.drawChord(chord, showLabels);
 }
 document.getElementById("scale_button").onclick = function() {
-	let midiValue = 62 // D
+	let midiValue = 62; // D
 	let note = musicKit.all_notes[midiValue];
 	let scale = new musicKit.Scale(note, musicKit.Scale.TYPE.Aeolian);
-	fretboardView.drawScale(scale);
+	let showLabels = true;
+	fretboardView.drawScale(scale, showLabels);
 }
 document.getElementById("clear_button").onclick = function() {
 	fretboardView.clear();
 }
-
 
 new musicKit.MidiListener(
 	function (midiValue, channel, velocity) { // note on
@@ -49,4 +49,3 @@ new musicKit.MidiListener(
 		let note = musicKit.all_notes[midiValue];
 		fretboardView.clearNote(note);
 	});
-
