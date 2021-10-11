@@ -23,14 +23,14 @@ document.getElementById("note_button").onclick = function() {
 	fretboardView.drawNote(note, showLabels);
 };
 document.getElementById("chord_button").onclick = function() {
-	let midiValue = 60; // C4
+	let midiValue = 45; // A2
 	let note = musicKit.all_notes[midiValue];
 	let chord = new musicKit.Chord(note, musicKit.Chord.TYPE.minor);
 	let showLabels = true;
 	fretboardView.drawChord(chord, showLabels);
 }
 document.getElementById("scale_button").onclick = function() {
-	let midiValue = 62; // D
+	let midiValue = 45; // A2
 	let note = musicKit.all_notes[midiValue];
 	let scale = new musicKit.Scale(note, musicKit.Scale.TYPE.Aeolian);
 	let showLabels = true;
