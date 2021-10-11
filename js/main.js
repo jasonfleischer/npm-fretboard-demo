@@ -4,7 +4,7 @@ musicKit.init();
 
 const fretboardView = fretboardKit({
 	id: 'fretboard',
-	width: 325,
+	width: 800,
 	onClick: function(note, isOn) {
 		if(isOn) {
 			fretboardView.drawNote(note);
