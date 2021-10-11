@@ -16,7 +16,7 @@ const fretboardView = fretboardKit({
 });
 
 document.getElementById("note_button").onclick = function() { 
-	let midiValue = 45; // A2
+	let midiValue = 44; // A2
 	let note = musicKit.all_notes[midiValue];
 	fretboardView.clear();
 	fretboardView.drawNote(note);
