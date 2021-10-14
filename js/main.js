@@ -19,23 +19,20 @@ const fretboardView = fretboardKit({
 document.getElementById("note_button").onclick = function() { 
 	let midiValue = 45; // A2
 	let note = musicKit.all_notes[midiValue];
-	let showLabels = true;
 	fretboardView.clear();
-	fretboardView.drawNote(note, showLabels);
+	fretboardView.drawNote(note);
 };
 document.getElementById("chord_button").onclick = function() {
 	let midiValue = 45; // A2
 	let note = musicKit.all_notes[midiValue];
 	let chord = new musicKit.Chord(note, musicKit.Chord.TYPE.minor);
-	let showLabels = true;
-	fretboardView.drawChord(chord, showLabels);
+	fretboardView.drawChord(chord);
 }
 document.getElementById("scale_button").onclick = function() {
 	let midiValue = 45; // A2
 	let note = musicKit.all_notes[midiValue];
 	let scale = new musicKit.Scale(note, musicKit.Scale.TYPE.Aeolian);
-	let showLabels = true;
-	fretboardView.drawScale(scale, showLabels);
+	fretboardView.drawScale(scale);
 }
 document.getElementById("clear_button").onclick = function() {
 	fretboardView.clear();
