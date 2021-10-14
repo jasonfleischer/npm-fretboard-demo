@@ -12,7 +12,8 @@ const fretboardView = fretboardKit({
 			fretboardView.clearNote(note);
 		}
 	},
-	hover: true
+	hover: true,
+	showLabels: true
 });
 
 document.getElementById("note_button").onclick = function() { 
