@@ -13,7 +13,7 @@ const fretboardView = fretboardKit({
 		}
 	},
 	hover: true,
-	showLabels: true
+	showLabels: false
 });
 
 document.getElementById("note_button").onclick = function() { 
