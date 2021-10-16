@@ -40,6 +40,7 @@ document.getElementById("clear_button").onclick = function() {
 
 document.getElementById('darkmode_checkbox').addEventListener('change', (event) => {
 	let body = document.getElementsByTagName("BODY")[0];
+	fretboardView.clear();
   	if (event.currentTarget.checked) {
     	body.style.background = "#000";
     	body.style.color = "#fff";
