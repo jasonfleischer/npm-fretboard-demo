@@ -2,7 +2,7 @@ const fretboardKit = require("@jasonfleischer/fretboard")
 const musicKit = require("@jasonfleischer/music-model-kit");
 musicKit.init();
 
-const fretboardView = fretboardKit({
+/*const fretboardView = fretboardKit({
 	id: 'fretboard',
 	width: 800,
 	onClick: function(note, isOn) {
@@ -15,12 +15,12 @@ const fretboardView = fretboardKit({
 	hover: true,
 	showLabels: true,
 	darkMode: false
-});
+});*/
 
-/*const fretboardView = fretboardKit({
+const fretboardView = fretboardKit({
 	id: 'fretboard',
 	showLabels: false
-});*/
+});
 
 document.getElementById("note_button").onclick = function() { 
 	let midiValue = 45; // A2
