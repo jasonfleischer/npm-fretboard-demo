@@ -29,7 +29,7 @@ class Interval {
 		function replaceAll(str, find, replace) {
 			return str.replace(new RegExp(find, 'g'), replace);
 		}
-		this.audio_file_name = "audio/intervals/"+ replaceAll(this.type, ' ', '_') +".mp3";
+		this.audio_file_name = "audio/intervals/"+ replaceAll(this.type, ' ', '_').toLowerCase() +".mp3";
 
 		this.higher_note_midi_value = note.midi_value + this.getIntervalStep();
 		if(this.higher_note_midi_value > 128) {

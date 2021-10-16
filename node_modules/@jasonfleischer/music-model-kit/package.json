@@ -1,6 +1,6 @@
 {
   "name": "@jasonfleischer/music-model-kit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Modelling for music objects such as notes, chords, scales and intervals",
   "main": "index.js",
   "scripts": {
