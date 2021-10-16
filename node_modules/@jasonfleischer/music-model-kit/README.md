@@ -1,6 +1,6 @@
 ## [@jasonfleischer/music-model-kit](https://www.npmjs.com/package/@jasonfleischer/music-model-kit)
 
-Modelling for music objects such as notes, chords, and scales. Also includes a midi listener.
+Modelling for music objects such as notes, chords, intervals and scales. Also includes a midi listener.
 
 
 #### Installation
