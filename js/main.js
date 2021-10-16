@@ -42,8 +42,10 @@ document.getElementById('darkmode_checkbox').addEventListener('change', (event) 
 	let body = document.getElementsByTagName("BODY")[0];
   	if (event.currentTarget.checked) {
     	body.style.background = "#000";
+    	body.style.color = "#fff";
   	} else {
    	 	body.style.background = "#fff";
+   	 	body.style.color = "#000";
   	}
 });
 
