@@ -59,12 +59,22 @@ class Chord {
 			break;
 
 		case Chord.TYPE.Aug:
-			this.inversion = Chord.INVERSION_TYPE.Root;
-			this.note_sequence = [0, 4, 8];
+			if(this.inversion == Chord.INVERSION_TYPE.Root) {
+				this.note_sequence = [0, 4, 8];
+			} else if (this.inversion == Chord.INVERSION_TYPE.First){
+				this.note_sequence = [-8, -4, 0];
+			} else {
+				this.note_sequence = [-4, 0, 4];
+			}
 			break;
 		 case Chord.TYPE.Dim:
-			this.inversion = Chord.INVERSION_TYPE.Root;
-			this.note_sequence = [0, 3, 6];
+		 	if(this.inversion == Chord.INVERSION_TYPE.Root) {
+				this.note_sequence = [0, 3, 6];
+			} else if (this.inversion == Chord.INVERSION_TYPE.First){
+				this.note_sequence = [-9, -6, 0];
+			} else {
+				this.note_sequence = [-6, 0, 3];
+			}
 			break;
 
 		case Chord.TYPE.Major7:
@@ -161,7 +171,7 @@ class Chord {
 			}
 		}
 		if (note_array.length == 0) {
-			log.e("no notes found for chord");  
+			log.i("no notes found for chord");  
 		}
 		return note_array;
 	}
@@ -196,7 +206,17 @@ class Chord {
 		} else{
 			inversion = four_note_inversion_types[ randomInteger(0, four_note_inversion_types.length-1) ];
 		}
-		return new Chord(random_note, random_chord_type, play_type, inversion);
+		var chord = new Chord(random_note, random_chord_type, play_type, inversion);
+		var note_array = chord.getNoteArray(all_notes, range)
+		let nunmber_of_notes = is_type_three_notes(random_chord_type) ? 3: 4;
+		while(note_array.length != nunmber_of_notes){
+
+			random_note = all_notes[randomInteger(min, max)];
+			chord = new Chord(random_note, random_chord_type, play_type, inversion);
+			note_array = chord.getNoteArray(all_notes, range);
+		}
+
+		return chord;
 	}
 }
 
