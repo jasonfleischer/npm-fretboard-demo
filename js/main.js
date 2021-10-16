@@ -43,9 +43,11 @@ document.getElementById('darkmode_checkbox').addEventListener('change', (event) 
   	if (event.currentTarget.checked) {
     	body.style.background = "#000";
     	body.style.color = "#fff";
+    	fretboardView.setDarkMode();
   	} else {
    	 	body.style.background = "#fff";
    	 	body.style.color = "#000";
+   	 	fretboardView.setLightMode();
   	}
 });
 
