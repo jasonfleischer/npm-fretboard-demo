@@ -39,10 +39,12 @@ document.getElementById("clear_button").onclick = function() {
 }
 
 document.getElementById('darkmode_checkbox').addEventListener('change', (event) => {
+	let body = document.getElementsByTagName("BODY")[0];
   	if (event.currentTarget.checked) {
     	alert('checked');
+    	body.style.background = "#000";
   	} else {
-   	 alert('not checked');
+   	 	alert('not checked');
   	}
 });
 
