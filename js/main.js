@@ -18,8 +18,7 @@ musicKit.init();
 });*/
 
 const fretboardView = fretboardKit({
-	id: 'fretboard',
-	showLabels: false
+	id: 'fretboard'
 });
 
 document.getElementById("note_button").onclick = function() { 
