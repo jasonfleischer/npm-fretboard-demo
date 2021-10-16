@@ -38,6 +38,14 @@ document.getElementById("clear_button").onclick = function() {
 	fretboardView.clear();
 }
 
+document.getElementById('darkmode_checkbox').addEventListener('change', (event) => {
+  	if (event.currentTarget.checked) {
+    	alert('checked');
+  	} else {
+   	 alert('not checked');
+  	}
+});
+
 new musicKit.MidiListener(
 	function (midiValue, channel, velocity) { // note on
 		let note = musicKit.all_notes[midiValue];
