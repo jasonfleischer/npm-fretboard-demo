@@ -123,7 +123,7 @@ class Chord {
 		let result = [];
 		let all_labels = ["R", "m2", "M2", "m3", "M3", "P4", "TT", "P5", "m6", "M6", "m7", "M7"];
 		var i;
-		for(i=0; i<=this.note_sequence.length; i++){
+		for(i=0; i<this.note_sequence.length; i++){
 			var sequence = this.note_sequence[i]
 			if(sequence < 0) {
 				sequence = 12 + sequence;
@@ -138,7 +138,7 @@ class Chord {
 		let all_labels = ["Root", "minor 2nd", "Mahor 2nd", "minor 3rd", "Major 3rd", "Fourth",
 						  "Tritone", "Fifth", "minor 6th", "Major 6th", "minor 7th", "Major 7th"];
 		var i;
-		for(i=0; i<=this.note_sequence.length; i++){
+		for(i=0; i<this.note_sequence.length; i++){
 			var sequence = this.note_sequence[i]
 			if(sequence < 0) {
 				sequence = 12 + sequence;
