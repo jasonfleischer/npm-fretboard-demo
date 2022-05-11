@@ -8,6 +8,8 @@
 
 CWD=`pwd`
 
+npm update;
+
 uglifyjs js/main.js -o js/bundle.js
 browserify js/bundle.js -o js/bundle.js
 uglifyjs js/bundle.js -o js/bundle.js
